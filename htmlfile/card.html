@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/card.css">
+    <title>Car Cards</title>
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="car-card">
+            <img src="../img/images (3).jpg">
+            <div class="car-content">
+                <h2 class="car-title">BMW M4 Competition</h2>
+                <p class="car-desc">Experience ultimate performance, sleek aerodynamic styling, and next-gen driving dynamics.</p>
+                <div class="car-price">$74,900</div>
+                <button class="details-btn" onclick="showCarDetails('BMW M4 Competition')">View Details</button>
+            </div>
+        </div>
+
+       
+        <div class="car-card">
+            <img src="" class="car-img">
+            <div class="car-content">
+                <h2 class="car-title">Audi e-tron GT</h2>
+                <p class="car-desc">Fully electric luxury sedan combining breathtaking acceleration with sustainable engineering.</p>
+                <div class="car-price">$104,000</div>
+                <button class="details-btn" onclick="showCarDetails('Audi e-tron GT')">View Details</button>
+            </div>
+        </div>
+
+        
+        <div class="car-card">
+            <img src=""alt="Luxury Sports Car" class="car-img">
+            <div class="car-content">
+                <h2 class="car-title">Porsche 911 Carrera</h2>
+                <p class="car-desc">An iconic masterpiece built for pure driving enthusiasts with unmatched timeless appeal.</p>
+                <div class="car-price">$114,400</div>
+                <button class="details-btn" onclick="showCarDetails('Porsche 911 Carrera')">View Details</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showCarDetails(carName) {
+            alert("Aap ne " + carName + " select kiya hai! Mazeed details jald available hongi.");
+        }
+    </script>
+
+</body>
+</html>
