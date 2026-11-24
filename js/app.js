@@ -18,7 +18,7 @@ let loginBtn = document.getElementById("login");
 let logoutBtn = document.getElementById("logout");
 let profileImg = document.getElementById("profile")
 
-// logoutBtn.style.display = "none";
+logoutBtn.style.display = "none";
 
 let localEmail = localStorage.getItem("signupemail")
 let localPassword = localStorage.getItem("signuppassword")
@@ -35,10 +35,6 @@ if (localEmail === null && localPassword === null) {
         signupBtn.style.display = "none"
     
 }
-
-
-
-
 function login() {
     console.log(loginEmail.value, loginPassword.value);
 
@@ -56,8 +52,6 @@ function login() {
     }
 
 }
-
-
 function logout() {
     localStorage.removeItem("signupemail");
     localStorage.removeItem("signuppassword");

@@ -186,10 +186,13 @@ nav {
   align-items: center;
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .card-container {
   display: flex;
   gap: 25px;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1200px;
@@ -200,6 +203,8 @@ nav {
   border-radius: 12px;
   overflow: hidden;
   width: 350px;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -275,7 +280,6 @@ nav {
     padding-bottom: 55px;
 }
 
-/* Logo and About */
 
 .footer-logo {
     font-size: 29px;
@@ -293,8 +297,6 @@ nav {
     line-height: 1.9;
     margin-bottom: 25px;
 }
-
-/* Social Links */
 
 .social-links {
     display: flex;
