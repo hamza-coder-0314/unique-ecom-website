@@ -1,0 +1,253 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #eeeeee;
+    color: #222;
+    padding: 35px 6%;
+}
+
+
+.checkout {
+    max-width: 1100px;
+    margin: 15px auto;
+    background: #fff;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 35px;
+}
+
+.breadcrumb {
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 21px;
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 17px;
+}
+
+.field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 17px;
+}
+
+.field label {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+    font-size: 11px;
+    background: white;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: #222;
+}
+
+.field textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+h3 {
+    font-size: 15px;
+    margin: 20px 0 15px;
+}
+
+.shipping {
+    display: flex;
+    gap: 12px;
+}
+
+.shipping-option {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.shipping-option span {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.shipping-option strong {
+    font-size: 11px;
+}
+
+.shipping-option small {
+    color: #888;
+    font-size: 10px;
+}
+
+.shipping-option b {
+    font-size: 12px;
+}
+
+.cart {
+    padding: 5px 0;
+}
+
+.cart h2 {
+    font-size: 20px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.product img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.product-info strong {
+    font-size: 11px;
+}
+
+.product-info small {
+    color: #888;
+    font-size: 10px;
+}
+
+.product > b {
+    font-size: 11px;
+}
+
+.discount {
+    display: flex;
+    border: 1px solid #ddd;
+    margin: 25px 0;
+}
+
+.discount input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    padding: 12px;
+    outline: none;
+    font-size: 11px;
+}
+
+.discount button {
+    border: none;
+    background: white;
+    padding: 0 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.summary p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.summary p span {
+    color: #777;
+}
+
+.summary hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 18px 0;
+}
+
+.summary h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 14px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkout-btn:hover {
+    background: #333;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .checkout {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .shipping {
+        flex-direction: column;
+    }
+}

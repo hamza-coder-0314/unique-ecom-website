@@ -13,11 +13,11 @@ function showSlide(index) {
         slideIndex = slides.length - 1;
     }
 
-    slides.forEach(function(slide) {
+    slides.forEach(function (slide) {
         slide.classList.remove("active");
     });
 
-    dots.forEach(function(dot) {
+    dots.forEach(function (dot) {
         dot.classList.remove("active-dot");
     });
 
@@ -33,4 +33,22 @@ function changeSlide(direction) {
 function currentSlide(index) {
     slideIndex = index;
     showSlide(slideIndex);
+}
+
+function conform() {
+    // alert("order sucessfully submitted")
+    // window.location.href="./index.html"
+
+
+    let localEmail = localStorage.getItem("signupemail")
+    let localPassword = localStorage.getItem("signuppassword")
+
+    if (localEmail !== null && localPassword !== null) {
+        alert("order sucessfully submitted")
+        window.location.href = "./index.html"
+
+    } else {
+        window.location.href = "./login.html"
+
+    }
 }
